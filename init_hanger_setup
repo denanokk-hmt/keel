@@ -1,0 +1,44 @@
+#!/bin/bash
+
+################################
+#Initial
+################################
+
+type=${1:-hoge}
+if [ "$type" = "hoge" ]; then
+  echo "please input arg1 init or update"
+  exit 0
+fi
+
+#hanger dir path
+path=`pwd`/hanger
+echo $path                                                                                                                                                                                                                    
+if [ "$type" = "init" ]; then
+  #cleanup  
+  git submodule deinit -f hanger 
+  git rm -f hanger
+  rm -rf .git/modules/hanger 
+
+  #add submoduler 
+  git submodule add -f git@bitbucket.org:svc_bs_devloper/v2-hanger.git hanger
+  
+
+elif [ "$type" = "update" ]; then
+  #update
+  git submodule init
+  git submodule update             
+else
+  echo "please input arg1 init or update"
+  exit 0
+fi
+
+#checkout branches
+(cd $path && \
+git checkout develop && \
+git checkout staging && \
+git checkout master)
+             
+echo "finish"
+
+
+

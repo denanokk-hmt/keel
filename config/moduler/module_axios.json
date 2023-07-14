@@ -1,0 +1,6 @@
+{
+  "modules": {
+    "normal": "/common/http/axios",
+    "taxiway": "/common/http/axios_taxiway"
+  }
+}

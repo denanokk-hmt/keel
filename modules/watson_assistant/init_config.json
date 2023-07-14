@@ -1,0 +1,40 @@
+{
+    "confidence_exclusion": 0.3,
+    "ai_timeout": 10000,
+    "manner" : "compare_results",
+    "under_min_length" : {
+        "question_min_length": 3,
+    	"conversation_id" : "not enough question length",
+    	"intents" : "not enough question length",
+        "entities" : "not enough question length",
+        "confidence" : [ 0, 0 ],
+        "text" : "",
+        "nodes_visited" : "nothing"
+    },
+    "over_max_length" : {
+        "question_max_length" : 1000000,
+    	"conversation_id" : "over question length",
+    	"intents" : "over question length",
+        "entities" : "over question length",
+        "confidence" : [ 0, 0 ],
+        "text" : "",
+        "nodes_visited" : "nothing"
+    },
+    "exclusion_min_length_strings" : {
+        "unresolved" : "未解決",
+        "resolved" : "解決",
+        "return" : "返品",
+        "return2" : "返品は",
+        "return3" : "返品を",
+        "shipping_cost" : "送料",
+        "shipping_cost2" : "送料は",
+        "Yes" : "Yes",
+        "No" : "No"
+    },
+    "no_output_words" : "HHHHH",
+    "expire_month" : 3,
+    "invoke_init" : {
+        "explain" : "[ sec, minute, hour, day ]",
+        "interval" : [ 30, 5, 0, 0 ]
+    }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "keel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@google-cloud/datastore": "^6.3.1",
+    "@google-cloud/pubsub": "^2.8.0",
+    "@google-cloud/storage": "^5.7.4",
+    "@google-cloud/translate": "^6.1.0",
+    "axios": "^0.21.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "~1.18.2",
+    "config": "^1.30.0",
+    "cookie-parser": "~1.4.3",
+    "csv": "^5.0.1",
+    "dateformat": "^3.0.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "file-stream-rotator": "^0.2.1",
+    "googleapis": "^67.0.0",
+    "grpc": "^1.15.1",
+    "jade": "^0.29.0",
+    "microtime": "^3.0.0",
+    "mocha": "^8.2.1",
+    "morgan": "^1.9.1",
+    "net": "^1.0.2",
+    "node-fetch": "^2.6.1",
+    "promise-timeout": "^1.1.1",
+    "qs": "^6.9.6",
+    "serve-favicon": "~2.4.5",
+    "socket.io-client": "^2.3.0",
+    "ua-parser-js": "^0.7.22",
+    "url": "^0.11.0",
+    "uuid": "^8.3.2",
+    "watson-developer-cloud": "^3.13.1",
+    "yaml": "^0.3.0"
+  },
+  "repository": {},
+  "engines": {
+    "node": "14.15.x"
+  }
+}
